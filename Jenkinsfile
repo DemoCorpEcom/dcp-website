@@ -7,5 +7,8 @@ pipeline {
                 sshPublisher(publishers: [sshPublisherDesc(configName: 'myhost', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
             }
         }
+        stage('Test'){
+            curl -X POST -H "Content-Type: application/json" -d '{"baseUrl": "http://192.168.1.7/dcp/", "commitId": "1"}' http://192.168.49.2:30003/api/scrape
+        }
     }
 }
