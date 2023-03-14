@@ -12,7 +12,7 @@ include("server.php");
     <li><a href="/dcp/product.php?id=1">Item 1</a></li>
     <li><a href="/dcp//product.php?id=2">Item 2</a></li>
     <li><a href="/dcp/product.php?id=3">Item 3</a></li>
-    <a href="/dcp/product.php?redirectUrl=https://www.example.com"> Privacy Policy </a>
+    <a href="/dcp/product.php?redirectUrl=https://www.google.com"> Privacy Policy </a>
 </ul>
 
 </html>
