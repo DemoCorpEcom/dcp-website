@@ -20,6 +20,6 @@ if (isset($_GET['redirectUrl'])) {
     <input type="text" name="redirectUrl" value="https://www.google.com" hidden>
     <input type="submit" name="submit" value="Google">
 </form>
-<a href="./product.php?redirectUrl=https://www.example.com"> Click </a>
+<a href="./product.php?redirectUrl=https://www.google.com"> Click </a>
 
 </html>
