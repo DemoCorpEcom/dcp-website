@@ -1,6 +1,6 @@
 <?php
 include("server.php");
-$id = $_GET['id'];
+// $id = $_GET['id'];
 echo "<h1>" . $id . "</h1>";
 $sql = " SELECT * FROM `product` WHERE `id` = '$id' ";
 $qry = mysqli_query($conn, $sql);
