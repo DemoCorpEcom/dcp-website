@@ -7,7 +7,7 @@ include("server.php");
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
-<h1>List</h1>
+<h1>Items</h1>
 <ul>
     <li><a href="/dcp/product.php?id=1">Item 1</a></li>
     <li><a href="/dcp//product.php?id=2">Item 2</a></li>
