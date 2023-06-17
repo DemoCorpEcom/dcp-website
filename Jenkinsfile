@@ -8,14 +8,14 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sshPublisher(publishers: [sshPublisherDesc(configName: 'myhost', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'ubuntu', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
             }
         }
-        stage('Test'){
-            steps{
-                // sh "curl -X POST -H \"Content-Type: application/json\" -d '{\"baseUrl\": \"http://${env.MY_IP_ADDRESS}/dcp/\", \"commitId\": \"${env.GIT_COMMIT}\"}' http://192.168.49.2:30003/api/scrape"
-            }            
-        }
+        // stage('Test'){
+        //     steps{
+        //         sh "curl -X POST -H \"Content-Type: application/json\" -d '{\"baseUrl\": \"http://${env.MY_IP_ADDRESS}/dcp/\", \"commitId\": \"${env.GIT_COMMIT}\"}' http://192.168.49.2:30003/api/scrape"
+        //     }            
+        // }
     }
     
 }
