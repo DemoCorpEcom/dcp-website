@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "dcp", "root@123");
+$conn = mysqli_connect("localhost", "root", "root@123");
 if ($conn == false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
