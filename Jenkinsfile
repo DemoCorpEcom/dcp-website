@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                sh "curl -X POST -H \"Content-Type: application/json\" -d '{\"baseUrl\": \"http://${env.SITE_IP_ADDRESS}/dcp/\", \"commitId\": \"${env.GIT_COMMIT}\"}' http://backend.umjoshua.xyz/api/scrape"
+                sh "curl -X POST -H \"Content-Type: application/json\" -d '{\"baseUrl\": \"http://${env.SITE_ADDRESS}/dcp/\", \"commitId\": \"${env.GIT_COMMIT}\"}' http://backend.umjoshua.xyz/api/scrape"
             }            
         }
     }
