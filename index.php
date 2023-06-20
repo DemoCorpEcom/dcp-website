@@ -15,6 +15,6 @@ include("server.php");
     <p><a href="/dcp/product.php?redirectUrl=https://www.google.com"> Privacy Policy </a><p>
 </ul>
 
-<!-- <img src="/dcp/image.php?image_url=https://www.w3schools.com/html/img_girl.jpg"></img> -->
+<img src="/dcp/image.php?image_url=https://www.w3schools.com/html/img_girl.jpg"></img>
 
 </html>
